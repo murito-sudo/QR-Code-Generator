@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    mysql:
+        environment:
+            - MYSQL_ROOT_PASSWORD=dummypassword
+            - MYSQL_USER=qr-codes
+            - MYSQL_PASSWORD=root
+            - MYSQL_DATABASE=qr-generator-database
+        container_name: mysql
+        ports:
+            - '5001:3306'
+        image: 'mysql:8-oracle'
+
+
+
